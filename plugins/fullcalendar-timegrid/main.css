@@ -27,11 +27,11 @@
 }
 
 .fc-ltr .fc-axis {
-  text-align: right;
+  text-align: left;
 }
 
 .fc-rtl .fc-axis {
-  text-align: left;
+  text-align: right;
 }
 
 /* TimeGrid Structure
@@ -73,8 +73,8 @@
   position: absolute;
   z-index: 3;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
 }
 
 /* divs within a cell within the fc-content-skeleton */
@@ -130,8 +130,8 @@
 
 .fc-time-grid .fc-highlight {
   position: absolute;
-  left: 0;
   right: 0;
+  left: 0;
   /* top and bottom will be in by JS */
 }
 
@@ -139,12 +139,12 @@
 --------------------------------------------------------------------------------------------------*/
 .fc-ltr .fc-time-grid .fc-event-container {
   /* space on the sides of events for LTR (default) */
-  margin: 0 2.5% 0 2px;
+  margin: 0 2px 0 2.5%;
 }
 
 .fc-rtl .fc-time-grid .fc-event-container {
   /* space on the sides of events for RTL */
-  margin: 0 2px 0 2.5%;
+  margin: 0 2.5% 0 2px;
 }
 
 .fc-time-grid .fc-event,
@@ -156,8 +156,8 @@
 
 .fc-time-grid .fc-bgevent {
   /* background events always span full width */
-  left: 0;
   right: 0;
+  left: 0;
 }
 
 /* TimeGrid Event Styling
@@ -180,8 +180,8 @@ be a descendant of the grid when it is being dragged.
   border-top-width: 0;
   padding-top: 1px;
   /* remove top rounded corners */
-  border-top-left-radius: 0;
   border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .fc-time-grid-event.fc-not-end {
@@ -189,8 +189,8 @@ be a descendant of the grid when it is being dragged.
   border-bottom-width: 0;
   padding-bottom: 1px;
   /* remove bottom rounded corners */
-  border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .fc-time-grid-event .fc-content {
@@ -245,8 +245,8 @@ be a descendant of the grid when it is being dragged.
 
 /* resizer (cursor device) */
 .fc-time-grid-event.fc-allow-mouse-resize .fc-resizer {
-  left: 0;
   right: 0;
+  left: 0;
   bottom: 0;
   height: 8px;
   overflow: hidden;
@@ -272,8 +272,8 @@ be a descendant of the grid when it is being dragged.
   border-color: inherit;
   background: #fff;
   /* horizontally center */
-  left: 50%;
-  margin-left: -5px;
+  right: 50%;
+  margin-right: -5px;
   /* center on the bottom edge */
   bottom: -5px;
 }
@@ -282,8 +282,8 @@ be a descendant of the grid when it is being dragged.
 --------------------------------------------------------------------------------------------------*/
 .fc-time-grid .fc-now-indicator-line {
   border-top-width: 1px;
-  left: 0;
   right: 0;
+  left: 0;
 }
 
 /* arrow on axis */
@@ -293,17 +293,17 @@ be a descendant of the grid when it is being dragged.
 }
 
 .fc-ltr .fc-time-grid .fc-now-indicator-arrow {
-  left: 0;
+  right: 0;
   /* triangle pointing right... */
-  border-width: 5px 0 5px 6px;
+  border-width: 5px 6px 5px 0;
   border-top-color: transparent;
   border-bottom-color: transparent;
 }
 
 .fc-rtl .fc-time-grid .fc-now-indicator-arrow {
-  right: 0;
+  left: 0;
   /* triangle pointing left... */
-  border-width: 5px 6px 5px 0;
+  border-width: 5px 0 5px 6px;
   border-top-color: transparent;
   border-bottom-color: transparent;
 }

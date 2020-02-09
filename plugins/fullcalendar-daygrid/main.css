@@ -21,8 +21,8 @@
 .fc-row.fc-rigid .fc-content-skeleton {
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
 }
 
 /* week and day number styling */
@@ -42,21 +42,21 @@
 }
 
 .fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number {
-  float: right;
+  float: left;
 }
 
 .fc-rtl .fc-dayGrid-view .fc-day-top .fc-day-number {
-  float: left;
+  float: right;
 }
 
 .fc-ltr .fc-dayGrid-view .fc-day-top .fc-week-number {
-  float: left;
-  border-radius: 0 0 3px 0;
+  float: right;
+  border-radius: 0 0 0 3px;
 }
 
 .fc-rtl .fc-dayGrid-view .fc-day-top .fc-week-number {
-  float: right;
-  border-radius: 0 0 0 3px;
+  float: left;
+  border-radius: 0 0 3px 0;
 }
 
 .fc-dayGrid-view .fc-day-top .fc-week-number {

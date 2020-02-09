@@ -11,13 +11,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dataTables_empty:before {
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child,
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child {
   position: relative;
-  padding-left: 30px;
+  padding-right: 30px;
   cursor: pointer;
 }
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before,
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before {
   top: 12px;
-  left: 4px;
+  right: 4px;
   height: 14px;
   width: 14px;
   display: block;
@@ -41,12 +41,12 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child:before
 }
 table.dataTable.dtr-inline.collapsed.compact > tbody > tr > td:first-child,
 table.dataTable.dtr-inline.collapsed.compact > tbody > tr > th:first-child {
-  padding-left: 27px;
+  padding-right: 27px;
 }
 table.dataTable.dtr-inline.collapsed.compact > tbody > tr > td:first-child:before,
 table.dataTable.dtr-inline.collapsed.compact > tbody > tr > th:first-child:before {
   top: 5px;
-  left: 4px;
+  right: 4px;
   height: 14px;
   width: 14px;
   border-radius: 14px;
@@ -61,11 +61,11 @@ table.dataTable.dtr-column > tbody > tr > th.control {
 table.dataTable.dtr-column > tbody > tr > td.control:before,
 table.dataTable.dtr-column > tbody > tr > th.control:before {
   top: 50%;
-  left: 50%;
+  right: 50%;
   height: 16px;
   width: 16px;
   margin-top: -10px;
-  margin-left: -10px;
+  margin-right: -10px;
   display: block;
   position: absolute;
   color: white;
@@ -117,7 +117,7 @@ div.dtr-modal {
   position: fixed;
   box-sizing: border-box;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100%;
   width: 100%;
   z-index: 100;
@@ -126,9 +126,9 @@ div.dtr-modal {
 div.dtr-modal div.dtr-modal-display {
   position: absolute;
   top: 0;
-  left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
   width: 50%;
   height: 50%;
   overflow: auto;
@@ -147,7 +147,7 @@ div.dtr-modal div.dtr-modal-content {
 div.dtr-modal div.dtr-modal-close {
   position: absolute;
   top: 6px;
-  right: 6px;
+  left: 6px;
   width: 22px;
   height: 22px;
   border: 1px solid #eaeaea;
@@ -163,8 +163,8 @@ div.dtr-modal div.dtr-modal-close:hover {
 div.dtr-modal div.dtr-modal-background {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
   bottom: 0;
   z-index: 101;
   background: rgba(0, 0, 0, 0.6);

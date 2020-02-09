@@ -39,12 +39,12 @@
 }
 
 .bootstrap-duallistbox-container .btn-group .btn {
-  border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .bootstrap-duallistbox-container:not(.moveonselect) select {
-  border-top-left-radius: 0;
   border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 .bootstrap-duallistbox-container .moveall,
 .bootstrap-duallistbox-container .removeall {
@@ -53,7 +53,7 @@
 }
 
 .bootstrap-duallistbox-container.bs2compatible .btn-group > .btn + .btn {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .bootstrap-duallistbox-container select {

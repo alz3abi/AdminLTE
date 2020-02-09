@@ -54,7 +54,7 @@
 }
 
 .jsgrid-align-left {
-    text-align: left;
+    text-align: right;
 }
 
 .jsgrid-align-center,
@@ -68,7 +68,7 @@
 .jsgrid-align-right input,
 .jsgrid-align-right textarea,
 .jsgrid-align-right select {
-    text-align: right;
+    text-align: left;
 }
 
 .jsgrid-header-cell {

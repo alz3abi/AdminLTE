@@ -16,7 +16,7 @@
   position: fixed;
   z-index: 2000;
   top: 0;
-  right: 0;
+  left: 0;
   height: 5rem;
   width: 5rem;
 
@@ -29,12 +29,12 @@
   display: block;
   position: absolute;
   top: 0;
-  right: .5rem;
+  left: .5rem;
   content: attr(data-progress-text);
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 100;
   font-size: 5rem;
   line-height: 1;
-  text-align: right;
+  text-align: left;
   color: rgba(238, 49, 72, 0.19999999999999996);
 }
