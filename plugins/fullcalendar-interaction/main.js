@@ -947,7 +947,7 @@ Docs & License: https://fullcalendar.io/
         };
         return OffsetTracker;
     }());
-    // certain clipping containers should never constrain interactions, like <html> and <body>
+    // certain clipping containers should never constrain interactions, like <html dir="rtl"> and <body>
     // https://github.com/fullcalendar/fullcalendar/issues/3615
     function isIgnoredClipping(node) {
         var tagName = node.tagName;
